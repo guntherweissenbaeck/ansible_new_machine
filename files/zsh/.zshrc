@@ -66,21 +66,21 @@ COMPLETION_WAITING_DOTS="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-    archlinux
+    # archlinux
     colored-man-pages
     composer
+    # debian
     docker
     docker-compose
     extract
     git
     gitignore
     laravel
-    node
-    npm
     pipenv
     python
     sudo
     tmux
+    ubuntu
     z
     zsh-autosuggestions
     zsh-interactive-cd
@@ -116,7 +116,7 @@ export SSH_KEY_PATH="~/.ssh/rsa_id"
 #
 
 # turn off the terminal beep
-xset b off
+# xset b off
 
 # aliases
 if [ -f ~/.aliases ]; then
@@ -124,4 +124,4 @@ if [ -f ~/.aliases ]; then
 fi
 
 # Load zsh-syntax-highlighting; should be last.
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
+# source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null

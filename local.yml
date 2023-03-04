@@ -7,9 +7,10 @@
   - name: install packages
     package:
       name:
-        - zsh
+        - fzf
         - tmux
         - vim-nox
+        - zsh
 
   - name: Copy .zshrc file.
     copy:
