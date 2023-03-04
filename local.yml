@@ -99,6 +99,14 @@
      group: gw
      mode: '0755'
 
+  - name: Create .vim/colors directory.
+    file:
+      path: /home/gw/.vim/colors
+      state: directory
+      mode: '0755'
+      owner: gw
+      group: gw
+
   - name: Copy predawn for vim.
     copy:
      src: files/vim/predawn.vim
