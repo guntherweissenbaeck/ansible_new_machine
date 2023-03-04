@@ -114,3 +114,19 @@
      owner: gw
      group: gw
      mode: '0755'
+
+  - name: Add dirs for toprc.
+    file:
+      path: /home/gw/.config/procps
+      state: directory
+      mode: '0755'
+      owner: gw
+      group: gw
+
+  - name: Copy toprc.
+    copy:
+     src: files/top/toprc
+     dest: /home/gw/.config/procps/toprc
+     owner: gw
+     group: gw
+     mode: '0755'
