@@ -98,3 +98,11 @@
      owner: gw
      group: gw
      mode: '0755'
+
+  - name: Copy predawn for vim.
+    copy:
+     src: files/vim/predawn.vim
+     dest: /home/gw/.vim/colors/predawn.vim
+     owner: gw
+     group: gw
+     mode: '0755'
