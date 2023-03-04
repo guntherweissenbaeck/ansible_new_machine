@@ -22,9 +22,13 @@
     git:
       repo: https://github.com/robbyrussell/oh-my-zsh
       dest: /home/gw/.oh-my-zsh
+      version: master
+  - name: GW owns oh-my-zsh
+    file:
+      state: /home/gw/.oh-my-zsh
+      recurse: yes
       owner: gw
       group: gw
-
 
   - name: Copy .alias file.
     copy:
