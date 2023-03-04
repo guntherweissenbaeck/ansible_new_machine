@@ -3,6 +3,9 @@
   connection: local
   become: true
 
+  vars:
+    the_user: "{{ ansible_user_id }}"
+
   tasks:
   - name: install packages
     package:
@@ -12,6 +15,11 @@
         - tmux
         - vim-nox
         - zsh
+
+  - name: cChange user shell to zsh 
+    user:
+      name: "{{ the_user }}"
+      shell: /usr/bin/zsh
 
   - name: Copy .zshrc file.
     copy:
