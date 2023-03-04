@@ -45,11 +45,13 @@
      owner: gw
      group: gw
 
-  - name: Create a directory if it does not exist
+  - name: Create .bin directory in home dir.
     file:
       path: /home/gw/.bin
       state: directory
       mode: '0755'
+      owner: gw
+      group: gw
 
   - name: Copy .tmux.conf file.
     copy:
