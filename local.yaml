@@ -1,0 +1,39 @@
+---
+- hosts: localhost
+  connection: local
+  become: true
+
+  tasks:
+  - name: install packages
+    package:
+      name:
+        - zsh
+        - tmux
+        - vim-nox
+
+  - name: Copy .zshrc file.
+    copy:
+     src: files/zsh/.zshrc
+     dest: /home/gw/.zshrc
+     owner: gw
+     group: gw
+
+  - name: Clone oh-my-zsh.
+	git:
+	  repo: https://github.com/robbyrussell/oh-my-zsh
+	  dest: /home/gw/.oh-my-zsh
+
+  - name: Copy .alias file.
+    copy:
+     src: files/aliases/.aliases
+     dest: /home/gw/.aliases
+     owner: gw
+     group: gw
+
+  - name: Copy .tmux.conf file.
+    copy:
+     src: files/tmux/.tmux.conf
+     dest: /home/gw/.tmux.conf
+     owner: gw
+     group: gw
+

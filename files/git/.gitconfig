@@ -1,0 +1,21 @@
+[user]
+	email = weissenbaeck@posteo.de
+	name = gw3000
+[core]
+	quotepath = false
+	commitGraph = true
+	excludesfile = /Users/gw/.gitignore_global
+[gc]
+	writeCommitGraph = true
+[pull]
+	rebase = false
+[diff]
+	tool = vimdiff
+[merge]
+	tool = vimdiff
+[difftool]
+	prompt = false
+[alias]
+	d = difftool
+[init]
+	defaultBranch = master
