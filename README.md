@@ -1,0 +1,5 @@
+```console
+sudo apt update
+sudo apt install -y git ansible
+sudo ansible-pull -U https://github.com/guntherweissenbaeck/ansible_new_machine.git
+```
