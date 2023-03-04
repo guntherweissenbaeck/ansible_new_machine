@@ -52,3 +52,10 @@
      owner: gw
      group: gw
 
+  - name: Copy tmux-mem-cpu-load binary.
+    copy:
+     src: files/tmux/tmux-mem-cpu-load
+     dest: /usr/local/bin/tmux-mem-cpu-load
+     owner: root
+     group: root
+
