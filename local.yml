@@ -71,7 +71,20 @@
     copy:
      src: files/tmux/tmux-mem-cpu-load
      dest: /usr/local/bin/tmux-mem-cpu-load
-     owner: root
+     owner: gw
      group: root
      mode: '0755'
 
+  - name: Install Plugged for vim
+    get_url:
+      url: https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+      dest: /home/gw/.vim/autoload/plug.vim
+      mode: '0440'
+
+  - name: Copy vimrc.
+    copy:
+     src: files/vim/.vimrc
+     dest: /home/gw/.vimrc
+     owner: gw
+     group: gw
+     mode: '0755'
