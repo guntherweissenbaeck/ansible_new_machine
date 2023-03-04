@@ -16,8 +16,8 @@
         - vim-nox
         - zsh
 
-  - name: Change user shell to zsh for user "{{ the_user }}"
-    shell: chsh -s /usr/bin/zsh "{{ the_user }}"
+  - name: Change user shell to zsh.
+    shell: chsh -s /usr/bin/zsh gw
 
   - name: Copy .zshrc file.
     copy:
