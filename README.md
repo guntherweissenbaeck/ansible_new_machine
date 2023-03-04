@@ -1,9 +1,12 @@
-## Vorarbeiten
+# Ansible mit neuer Linux-Maschine
+ Using Ansible to automate your Linux-Machine configs! 
+
+## 	Preparations
 ```console
 sudo apt update && sudo apt install -y git ansible
 ```
 
-## Benutzer hinzufügen
+## Adding the user
 ```console
 adduser gw
 ```
@@ -18,7 +21,7 @@ usermod -aG sudo gw
 sudo ansible-pull -U https://github.com/guntherweissenbaeck/ansible_new_machine.git
 ```
 
-## Ziel
+## Goal
 ```console
 curl https://github.com/guntherweissenbaeck/ansible_new_machine/start | sudo bash
 ```
