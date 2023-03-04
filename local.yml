@@ -31,6 +31,12 @@
       owner: gw
       group: gw
 
+  - name: Clone autosuggestions for oh-my-zsh.
+    git:
+      repo: https://github.com/zsh-users/zsh-autosuggestions
+      dest: /home/gw/.oh-my-zsh/custom/plugins/zsh-autosuggestions
+      version: master
+
   - name: Copy .alias file.
     copy:
      src: files/aliases/.aliases
