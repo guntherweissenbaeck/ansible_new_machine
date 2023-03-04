@@ -22,6 +22,9 @@
     git:
       repo: https://github.com/robbyrussell/oh-my-zsh
       dest: /home/gw/.oh-my-zsh
+      owner: gw
+      group: gw
+
 
   - name: Copy .alias file.
     copy:
