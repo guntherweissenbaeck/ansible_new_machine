@@ -75,7 +75,6 @@ plugins=(
     extract
     git
     gitignore
-    laravel
     pipenv
     python
     sudo
