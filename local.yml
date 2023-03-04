@@ -23,9 +23,10 @@
       repo: https://github.com/robbyrussell/oh-my-zsh
       dest: /home/gw/.oh-my-zsh
       version: master
+
   - name: GW owns oh-my-zsh
     file:
-      state: /home/gw/.oh-my-zsh
+      path: /home/gw/.oh-my-zsh
       recurse: yes
       owner: gw
       group: gw
