@@ -12,16 +12,34 @@
         - tmux
         - vim-nox
         - zsh
+    when: ansible_os_family == "Debian"
+
+  - name: install packages
+    package:
+      name:
+        - curl
+        - tmux
+        - zsh
+    when: ansible_os_family == "RedHat"
 
   - name: Change user shell to zsh.
     shell: chsh -s /usr/bin/zsh gw
 
-  - name: Copy .zshrc file.
+  - name: Copy .zshrc file on a Debian-Linux.
     copy:
-     src: files/zsh/.zshrc
+     src: files/zsh/.zshrc_debian
      dest: /home/gw/.zshrc
      owner: gw
      group: gw
+    when: ansible_os_family == "Debian"
+
+  - name: Copy .zshrc file on a RedHat-Linux.
+    copy:
+     src: files/zsh/.zshrc_redhat
+     dest: /home/gw/.zshrc
+     owner: gw
+     group: gw
+    when: ansible_os_family == "RedHat"
 
   - name: Clone oh-my-zsh.
     git:

@@ -66,20 +66,12 @@ COMPLETION_WAITING_DOTS="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-    # archlinux
     colored-man-pages
-    composer
-    # debian
-    docker
-    docker-compose
     extract
     git
     gitignore
-    pipenv
-    python
     sudo
     tmux
-    ubuntu
     z
     zsh-autosuggestions
     zsh-interactive-cd

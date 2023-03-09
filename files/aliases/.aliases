@@ -4,19 +4,19 @@
 # CHANGE IN CERTAIN DIRS
 # ----------------------------------------------------------------------------
 alias bin='cd ~/.bin'
-alias dok='cd ~/Dokumente'
+alias dok='cd ~/Documents'
 alias dow='cd ~/Downloads'
-alias doc='cd ~/Dokumente/docker'
-alias junk='cd ~/Junk'
-alias mus='cd ~/Musik'
-alias vid='cd ~/Videos'
+# alias doc='cd ~/Dokumente/docker'
+# alias junk='cd ~/Junk'
+# alias mus='cd ~/Musik'
+# alias vid='cd ~/Videos'
 
 # ----------------------------------------------------------------------------
 # DOCKER STUFF
 # ----------------------------------------------------------------------------
-alias dcpsa='docker ps -a'
-alias dcclean='docker volume prune -f & docker network prune -f'
-alias dcclear='docker volume prune -f & docker network prune -f & docker rmi $(docker images -qa)'
+# alias dcpsa='docker ps -a'
+# alias dcclean='docker volume prune -f & docker network prune -f'
+# alias dcclear='docker volume prune -f & docker network prune -f & docker rmi $(docker images -qa)'
 
 # ----------------------------------------------------------------------------
 # CLI SHORTENERS
@@ -37,31 +37,31 @@ alias sd="poweroff"
 alias t="tmux"
 alias tt="trash"
 alias v="vim"
-alias nv="nvim"
+# alias nv="nvim"
 alias wiki="vim /Users/gw/Documents/develop/vimwiki/index.md"
-alias x='startx'
+# alias x='startx'
 
 # ----------------------------------------------------------------------------
 # PYTHON (DJANGO UVICORN) STUFF
 # ----------------------------------------------------------------------------
-alias python='/usr/local/bin/python3'
-alias pin='touch __init__.py'
-alias pipup='pip install --upgrade pip'
-alias pm='python manage.py'
-alias pmm='python manage.py migrate'
-alias pmmm='python manage.py makemigrations'
-alias pmr='python manage.py runserver'
-alias pv='python -m venv .venv'
-alias py3='/usr/bin/python'
-alias pybug='python -m pdb'
-alias pv='python -m venv .venv'
-alias sv='source .venv/bin/activate'
-alias pipup='pip install --upgrade pip'
-alias uc='uvicorn main:app --reload'
-alias uva='uvicorn app.main:app --reload'
-alias pipi='pip install'
+# alias python='/usr/local/bin/python3'
+# alias pin='touch __init__.py'
+# alias pipup='pip install --upgrade pip'
+# alias pm='python manage.py'
+# alias pmm='python manage.py migrate'
+# alias pmmm='python manage.py makemigrations'
+# alias pmr='python manage.py runserver'
+# alias pv='python -m venv .venv'
+# alias py3='/usr/bin/python'
+# alias pybug='python -m pdb'
+# alias pv='python -m venv .venv'
+# alias sv='source .venv/bin/activate'
+# alias pipup='pip install --upgrade pip'
+# alias uc='uvicorn main:app --reload'
+# alias uva='uvicorn app.main:app --reload'
+# alias pipi='pip install'
 
 # ----------------------------------------------------------------------------
 # HTML WEBDEV
 # ----------------------------------------------------------------------------
-alias lr='livereload -p8000'
+# alias lr='livereload -p8000'
