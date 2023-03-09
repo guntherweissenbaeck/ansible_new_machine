@@ -22,8 +22,13 @@
         - zsh
     when: ansible_os_family == "RedHat"
 
-  - name: Change user shell to zsh.
+  - name: Change user shell to zsh on Debain-Linux.
     shell: chsh -s /usr/bin/zsh gw
+    when: ansible_os_family == "Debian" 
+
+  - name: Change user shell to zsh on RedHat-Linux.
+    shell: chsh -s /bin/zsh gw
+    when: ansible_os_family == "RedHat" 
 
   - name: Copy .zshrc file on a Debian-Linux.
     copy:
