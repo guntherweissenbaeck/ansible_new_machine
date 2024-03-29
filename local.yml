@@ -12,7 +12,7 @@
         - tmux
         - vim-nox
         - zsh
-    when: ansible_os_family == "Debian"
+    ## when: ansible_os_family == "Debian"
 
   - name: install packages
     package:
@@ -23,7 +23,7 @@
     
   - name: Change user shell to zsh on Debain-Linux.
     shell: chsh -s /usr/bin/zsh gw
-    when: ansible_os_family == "Debian" 
+    ## when: ansible_os_family == "Debian" 
 
   - name: Copy .zshrc file on a Debian-Linux.
     copy:
@@ -31,7 +31,7 @@
      dest: /home/gw/.zshrc
      owner: gw
      group: gw
-    when: ansible_os_family == "Debian"
+    ## when: ansible_os_family == "Debian"
 
   - name: Copy .zshrc file on a RedHat-Linux.
     copy:
