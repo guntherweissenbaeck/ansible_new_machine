@@ -10,7 +10,7 @@
         - curl
         - fzf
         - tmux
-        - vim-nox
+        - vim
         - zsh
     ## when: ansible_os_family == "Debian"
 
